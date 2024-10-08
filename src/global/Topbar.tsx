@@ -10,10 +10,11 @@ import CalculateOutlinedIcon from '@mui/icons-material/CalculateOutlined';
 import TimeDisplayEST from "./TimedisplayEST";
 import TimeDisplayIST from "./TimedisplayIST";
 import TimeDisplayHKT from "./TimedisplayHKT";
+import { Grommet } from "grommet";
 
 export const Topbar = (): JSX.Element => {
   return (
-    <>
+    <><Grommet>
       <Header />
       <Box display="flex" justifyContent="space-between" alignItems="center" sx={{ backgroundColor: '#f0f0f0', padding: '10px', marginTop: '-1px' }}>
         {/* Time display box */}
@@ -32,17 +33,21 @@ export const Topbar = (): JSX.Element => {
           <IconButton>
             <NotificationsActiveOutlinedIcon />
           </IconButton>
+
           <IconButton>
             <CalculateOutlinedIcon />
           </IconButton>
+
           <IconButton>
             <HelpOutlineOutlinedIcon />
           </IconButton>
+
           <IconButton>
             <SettingsOutlinedIcon />
           </IconButton>
         </Box>
       </Box>
+      </Grommet>
     </>
   );
 };
