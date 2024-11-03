@@ -1,5 +1,5 @@
 import React from "react";
-import './Topbar.css';
+import './HeaderTimeBar.css';
 import { Header } from "./Header";
 import Box from '@mui/material/Box';
 import { IconButton, Table, TableRow, TableCell } from "@mui/material";
@@ -12,7 +12,7 @@ import TimeDisplayIST from "./TimedisplayIST";
 import TimeDisplayHKT from "./TimedisplayHKT";
 import { Grommet } from "grommet";
 
-export const Topbar = (): JSX.Element => {
+export const HeaderTimeBar = (): JSX.Element => {
   return (
     <><Grommet>
       <Header />
