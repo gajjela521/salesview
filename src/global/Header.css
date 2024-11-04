@@ -8,3 +8,13 @@
     font-family: Arial, sans-serif; /* A simple font */
   }
   
+  .mainheader .logo {
+    width: 40px; /* Adjust size as needed */
+    height: 40px;
+    margin-right: 10px; /* Space between logo and text */
+  }
+
+  .orange-text {
+    color: black;
+  }
+  

@@ -1,3 +1,4 @@
+import React from 'react';
 import { DataChart } from "grommet/components/DataChart"
 import { CompanyDataTest } from "../models/CompanyData"
 

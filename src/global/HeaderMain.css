@@ -1,0 +1,20 @@
+.topbar {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: aliceblue;
+  }
+
+.combinedheader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    background-color:wheat; /* Set background to avoid content showing through */
+  }
+
+.app-content {
+    margin-top: 300px; /* Adjust based on header height to avoid content overlap */
+}

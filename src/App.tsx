@@ -1,9 +1,8 @@
-import React from 'react';
-import { HeaderTimeBar } from './global/HeaderTimeBar';
+import { HeaderTimeBar } from './global/HeaderMain';
 import { Sidebar } from './global/Sidebar';
 import { Grommet, Heading, Main, Paragraph } from 'grommet';
 import { DataChartComponent } from './components/DataChartComponet';
-// import { itData } from './dummyData';
+import { DashboardLayout } from '@toolpad/core/DashboardLayout';
 import { CompanyDataTest } from './models/CompanyData';
 import { autoData, bankingData, fmcgData, pharmaData } from './dummyData';
 
@@ -25,8 +24,11 @@ function App() {
   return (
     <Grommet>
       <div className="app">
-        <HeaderTimeBar />
+        
+        <HeaderTimeBar /> {/* should be fixed every time */}
+        <div className="app-content">
         <Sidebar />
+        <DashboardLayout>
           <Main pad="large">
             <Heading>UpTrend Sectors</Heading>
             <DataChartComponent testdata={itData}/>
@@ -36,8 +38,8 @@ function App() {
             <DataChartComponent testdata={fmcgData}/>
             <Paragraph>Something about something</Paragraph>
           </Main>
-        
-        
+          </DashboardLayout>
+          </div>
       </div>
     </Grommet>
   );

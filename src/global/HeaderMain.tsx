@@ -1,5 +1,5 @@
 import React from "react";
-import './HeaderTimeBar.css';
+import './HeaderMain.css';
 import { Header } from "./Header";
 import Box from '@mui/material/Box';
 import { IconButton, Table, TableRow, TableCell } from "@mui/material";
@@ -15,6 +15,7 @@ import { Grommet } from "grommet";
 export const HeaderTimeBar = (): JSX.Element => {
   return (
     <><Grommet>
+      <div className="combinedheader">
       <Header />
       <Box display="flex" justifyContent="space-between" alignItems="center" sx={{ backgroundColor: '#f0f0f0', padding: '10px', marginTop: '-1px' }}>
         {/* Time display box */}
@@ -47,6 +48,7 @@ export const HeaderTimeBar = (): JSX.Element => {
           </IconButton>
         </Box>
       </Box>
+      </div>
       </Grommet>
     </>
   );

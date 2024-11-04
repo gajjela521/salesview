@@ -1,11 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "types": ["node", "react-router-dom"],
+    "target": "ESNext",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
+    ],
+    "types": [
+      "react",
+      "react-dom",
+      "react-router-dom"
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -23,5 +27,5 @@
   },
   "include": [
     "src"
-  ]
+, "webpack.config.js", "babel.config.js"  ]
 }
